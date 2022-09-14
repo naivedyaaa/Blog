@@ -1,0 +1,22 @@
+.contact-content{
+    /* height: 100vh; */
+    /* background-color: rgb(208, 208, 243); */
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+    /* to remove the unnecessary scroll bar we write over flow hidden */
+    overflow: hidden;
+}
+.contact-content::after{
+    content: "";
+    background-image: url("../img/11.svg");
+    /* its position will be from content as we have given content's position as relative */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+    /* so that form comes above background we reduce z-index of background  */
+    z-index: -1;
+}

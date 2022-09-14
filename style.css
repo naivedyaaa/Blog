@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    font-family: var(--font1);
+    /* height: 74px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.nav-left{
+    display: flex;
+}
+.nav-left span{
+    font-size:35px;
+    display: flex;
+}
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 13px 77px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+}
+.nav-left ul li a:hover{
+    font-weight: bolder;
+    color: var(--main-bg-color);
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    height: 100%;
+    display: flex;
+    /* background-color: rgb(208, 208, 243); */
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+.content::after{
+    content: "";
+    background-image: url("../img/11.svg");
+    /* its position will be from content as we have given content's position as relative */
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+}
+.content-left{
+    font: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 49px;
+    z-index: 1; /* so that the users can select the text */
+}
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-right img{
+    height: 355px;
+    border-radius: 200px;
+    border: 2px solid black;
+}
+.home-articles{
+    padding: 18px;
+    background-color: rgba(248, 239, 239, 0.5); /* here 0.5 is transpirancy */
+    margin-top: 23px;
+    position: relative;
+}
+
+.year-box{
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    right: 0px;
+    top: 80px;
+    font-size: 18px;
+}
+
+.year-box div{
+    margin: 12px 0px;
+}
+
+.home-article{
+    display: flex;
+    margin: 25px;
+}
+.home-article img{
+    width: 300px;
+}
+.home-article-content{
+    align-self: center;
+    padding: 25px;
+}
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.footer a{
+    color: white;
+}
